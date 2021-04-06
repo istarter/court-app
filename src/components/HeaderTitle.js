@@ -3,11 +3,11 @@ import {StyleSheet, Text, View} from 'react-native';
 import {scale} from 'react-native-size-matters';
 import {COLORS} from '../res/Constant';
 
-const HeaderTitle = ({titleText}) => {
+const HeaderTitle = ({titleText, text}) => {
   return (
     <View style={styles.container}>
       <Text style={styles.welcome}>{titleText}</Text>
-      <Text style={styles.numberText}>Enter your number to continue</Text>
+      <Text style={styles.numberText}>{text}</Text>
     </View>
   );
 };

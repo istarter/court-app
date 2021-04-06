@@ -3,10 +3,10 @@ import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {scale} from 'react-native-size-matters';
 import {COLORS} from '../res/Constant';
 
-const CommonButton = () => {
+const CommonButton = ({title}) => {
   return (
     <TouchableOpacity style={styles.button}>
-      <Text style={styles.buttonText}>Request Otp</Text>
+      <Text style={styles.buttonText}>{title}</Text>
     </TouchableOpacity>
   );
 };

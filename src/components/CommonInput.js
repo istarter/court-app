@@ -3,7 +3,7 @@ import {StyleSheet, Text, TextInput, View} from 'react-native';
 import {scale} from 'react-native-size-matters';
 import {COLORS} from '../res/Constant';
 
-const CommonNumberInput = () => {
+const CommonInput = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.mobile}>Mobile number</Text>
@@ -12,7 +12,7 @@ const CommonNumberInput = () => {
   );
 };
 
-export default CommonNumberInput;
+export default CommonInput;
 
 const styles = StyleSheet.create({
   container: {

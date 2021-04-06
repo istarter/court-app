@@ -4,6 +4,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import WelcomeScreen from '../screens/WelcomeScreen';
 import {NavigationContainer} from '@react-navigation/native';
 import RegisterScreen from '../screens/RegisterScreen';
+import VerifyOTPScreen from '../screens/VerifyOTPScreen';
 
 const Stack = createStackNavigator();
 
@@ -11,8 +12,9 @@ const AuthStackNavigator = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator headerMode="none">
+        <Stack.Screen name="otp" component={VerifyOTPScreen} />
         {/* <Stack.Screen name="welcome" component={WelcomeScreen} /> */}
-        <Stack.Screen name="register" component={RegisterScreen} />
+        {/* <Stack.Screen name="register" component={RegisterScreen} /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );
